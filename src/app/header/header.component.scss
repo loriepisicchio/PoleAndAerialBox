@@ -1,0 +1,45 @@
+@import "../../stylesheets/colors";
+
+.header {
+  background-color: $main-violet;
+  padding: 15px 50px 15px 50px;
+}
+.container {
+  display: flex;
+}
+.container > li {
+  flex: 1;
+}
+.search {
+  flex: 1;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.header-image {
+  display: flex;
+}
+
+@media all and (max-width: 600px) {
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container > li {
+    flex-basis: 50%;
+  }
+
+}
+
+@media all and (max-width: 400px) {
+  .container > li {
+    flex-basis: 100%;
+  }
+  .search {
+    order: 1;
+  }
+}
