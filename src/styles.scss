@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "stylesheets/colors";
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  background-color: $main-violet;
+}
